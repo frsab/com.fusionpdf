@@ -34,6 +34,7 @@ public class FusionPdf {
 		List<File> fileToLoaded=new ArrayList<File>();
 		List<PDDocument> pddDocumentToLoaded=new ArrayList<PDDocument>();
 		File[] xx = file.listFiles();
+		Arrays.sort(xx);
 		 for (int i = 0; i < xx.length; i++) {
 			 showRep(xx[i]);//.getName()+ "), ";
 			 if(!(xx[i].isDirectory())&& xx[i].getName().endsWith(".pdf")){
